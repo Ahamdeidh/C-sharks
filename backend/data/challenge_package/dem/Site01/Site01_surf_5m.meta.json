@@ -1,0 +1,33 @@
+{
+  "product_id": "NASA_LOLA_Site01_SURF_5M",
+  "resolution_m_per_px": 5.0,
+  "pole_row": -800.0,
+  "pole_col": 3800.0,
+  "elevation_units": "meters",
+  "vertical_datum": "MOON_ME / 1737.4 km IAU lunar reference sphere",
+  "projection": "polar_stereographic_south_lon0",
+  "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+  "is_synthetic": false,
+  "measurement_status": "measured",
+  "uncertainty_status": "provided",
+  "tile_origin_x_m": -19000.0,
+  "tile_origin_y_m": -4000.0,
+  "tile_y_sign": -1.0,
+  "tile_bounds_m": [
+    -19000.0,
+    -20000.0,
+    -3000.0,
+    -4000.0
+  ],
+  "max_search_radius_m": 1000.0,
+  "source_asset": "Site01_surf_5m.tif",
+  "challenge_site_id": "connecting-ridge",
+  "challenge_site_name": "Connecting Ridge",
+  "coverage_note": "Local 5 m LOLA tile; selected only when requested coordinates are inside the verified tile footprint.",
+  "metadata_correction": {
+    "field": "tile_origin_y_m",
+    "original_user_archive_value": 4000.0,
+    "corrected_value_from_GeoTIFF_affine_transform_f": -4000.0,
+    "reason": "The supplied sidecar said +4000 m while the GeoTIFF north/top coordinate is -4000 m. Do not treat this as independent geographic validation."
+  }
+}

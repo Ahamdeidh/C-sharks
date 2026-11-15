@@ -1,0 +1,40 @@
+{
+  "source": "User-provided Lunar_Navigator_merged_final challenge package; raw NASA/JPL Horizons responses preserved in each fixture.",
+  "period_utc": [
+    "2025-01-01T00:00:00Z",
+    "2028-12-31T23:00:00Z"
+  ],
+  "sample_interval": "1 hour",
+  "targets": [
+    "Sun",
+    "Earth"
+  ],
+  "sites": [
+    {
+      "site_id": "malapert_a",
+      "name": "Malapert A",
+      "latitude_deg": -80.13,
+      "longitude_east_deg": 1.44,
+      "fixture": "backend/data/fixtures/horizons_longrange/malapert_a.json",
+      "hourly_samples_per_target": 35064
+    },
+    {
+      "site_id": "nobile_region",
+      "name": "Nobile Region",
+      "latitude_deg": -85.28,
+      "longitude_east_deg": 53.27,
+      "fixture": "backend/data/fixtures/horizons_longrange/nobile_region.json",
+      "hourly_samples_per_target": 35064
+    },
+    {
+      "site_id": "shackleton_connecting_ridge",
+      "name": "CLPS Shackleton Connecting Ridge",
+      "latitude_deg": -89.63,
+      "longitude_east_deg": 132.32,
+      "fixture": "backend/data/fixtures/horizons_longrange/shackleton_connecting_ridge.json",
+      "hourly_samples_per_target": 35064
+    }
+  ],
+  "eop_note": "Raw response headers report data-based EOP through 2026-11-13 and predicted EOP through 2027-02-08; later times are retained as returned but should be treated cautiously.",
+  "observer_altitude_note": "The source requests SITE_COORD altitude=0 km. This is not a measured site terrain elevation; terrain-fused KPIs are withheld when it differs from the selected site elevation baseline."
+}

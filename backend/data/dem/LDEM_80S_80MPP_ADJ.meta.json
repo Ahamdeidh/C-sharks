@@ -1,0 +1,18 @@
+{
+  "product_id": "LDEM_80S_80MPP_ADJ",
+  "dataset_id": "LRO-L-LOLA-4-GDR-V1.0",
+  "resolution_m_per_px": 80.0,
+  "pole_row": 300.0,
+  "pole_col": 300.0,
+  "full_grid_dimensions": [
+    601,
+    601
+  ],
+  "auto_center_pole_if_resized": true,
+  "elevation_units": "meters",
+  "vertical_datum": "1737.4 km reference sphere",
+  "projection": "polar_stereographic_south_lon0",
+  "source_url": "https://pds-geosciences.wustl.edu/lro/lro-l-lola-4-gdr-v1/lrolol_1xxx/data/lola_gdr/polar/jp2/",
+  "nodata_value": -32768.0,
+  "is_synthetic": false
+}

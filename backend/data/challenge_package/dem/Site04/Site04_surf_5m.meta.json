@@ -1,0 +1,27 @@
+{
+  "product_id": "NASA_LOLA_Site04_SURF_5M",
+  "resolution_m_per_px": 5.0,
+  "pole_row": 200.0,
+  "pole_col": 1800.0,
+  "elevation_units": "meters",
+  "vertical_datum": "MOON_ME / 1737.4 km IAU lunar reference sphere",
+  "projection": "polar_stereographic_south_lon0",
+  "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+  "is_synthetic": false,
+  "measurement_status": "measured",
+  "uncertainty_status": "not_provided",
+  "tile_origin_x_m": -9000.0,
+  "tile_origin_y_m": 1000.0,
+  "tile_y_sign": 1.0,
+  "tile_bounds_m": [
+    -9000.0,
+    -15000.0,
+    7000.0,
+    1000.0
+  ],
+  "max_search_radius_m": 1000.0,
+  "source_asset": "Site04_surf_5m.tif",
+  "challenge_site_id": "shackleton",
+  "challenge_site_name": "Shackleton rim",
+  "coverage_note": "Local 5 m LOLA tile; selected only when requested coordinates are inside the verified tile footprint."
+}

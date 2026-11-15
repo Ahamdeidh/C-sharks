@@ -1,0 +1,59 @@
+{
+  "dataset_id": "nasa_and_peer_reviewed_lunar_engineering_benchmarks_v1",
+  "purpose": "Independent external reference values from published NASA technical reports and peer-reviewed lunar science literature used to cross-validate the pad-scale slope, boulder hazard, regolith Terzaghi bearing, plume-surface interaction (PSI), and DSN X-band RF link budget models.",
+  "benchmarks": {
+    "pad_scale_fractal_slope": {
+      "citation": "Rosenburg, M. A., Aharonson, O., Head, J. W., et al. (2011), 'Global surface slopes and roughness of the Moon from the Lunar Orbiter Laser Altimeter', Journal of Geophysical Research: Planets, 116, E02001, doi:10.1029/2010JE003716.",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2010JE003716",
+      "lunar_highlands_hurst_exponent": 0.75,
+      "hurst_uncertainty": 0.03,
+      "scaling_law": "sigma_slope(L_pad) = sigma_slope(L_dem) * (L_dem / L_pad)^(1 - H)",
+      "reference_dem_scale_m": 80.0,
+      "reference_pad_scale_m": 15.0,
+      "expected_amplification_factor": 1.5197,
+      "tolerance": 0.005,
+      "artemis_south_pole_rim_crest_macro_slope_range_deg": [2.0, 12.0]
+    },
+    "boulder_morphometry_and_diviner_ra": {
+      "citation": "Bandfield, J. L., Ghent, R. R., Vasavada, A. R., et al. (2011), 'Lunar surface rock abundance and regolith fines temperatures derived from LRO Diviner Radiometer data', JGR Planets, 116, E00H02; and Cintala, M. J., & McBride, K. M. (1995), NASA TM-4680 (Surveyor I, III, VI, VII & Apollo 16 boulder morphometry).",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2011JE003866",
+      "published_polar_highland_rock_abundance_range": [0.004, 0.018],
+      "published_height_to_diameter_ratio_h_over_d": 0.52,
+      "h_over_d_bounds": [0.48, 0.56],
+      "reference_d99_m_at_ra_009": 0.42,
+      "expected_h99_m_at_ra_009": 0.218,
+      "tolerance_m": 0.01
+    },
+    "regolith_terzaghi_bearing_and_apollo_sinkage": {
+      "citation": "Carrier, W. D., Olhoeft, G. R., & Mendell, W. (1991), 'Physical Properties of the Lunar Surface', in Lunar Sourcebook: A User's Guide to the Moon, Cambridge Univ. Press, Ch. 9, Table 9.4 & Eqs. 9.12-9.15 (pp. 475-567); Apollo 11/15/16 Lunar Module footpad sinkage telemetry.",
+      "url": "https://www.lpi.usra.edu/publications/books/lunar_sourcebook/",
+      "reference_friction_angle_deg": 39.0,
+      "reference_cohesion_kpa": 0.85,
+      "reference_bulk_density_kg_m3": 1580.0,
+      "published_terzaghi_factors_phi39": {
+        "Nc": 67.87,
+        "Nq": 55.96,
+        "Ngamma": 92.25
+      },
+      "expected_q_ult_kpa_shackleton": 75.56,
+      "apollo_lm_measured_sinkage_range_cm": [1.5, 6.0],
+      "apollo_lm_dynamic_contact_pressure_range_kpa": [5.0, 12.0]
+    },
+    "plume_surface_interaction_metzger2011": {
+      "citation": "Metzger, P. T., Smith, J., & Lane, J. E. (2011), 'Phenomenology of soil erosion due to rocket exhaust on the Moon and the Mauna Kea lunar test site', JGR Planets, 116, E06005; and Immer, C., et al. (2011), Apollo 12 / Surveyor III exhaust scouring analysis.",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2010JE003745",
+      "reference_descent_thrust_n": 15000.0,
+      "reference_nozzle_height_m": 2.0,
+      "published_annular_scour_depth_bounds_cm": [1.0, 8.0],
+      "published_ejecta_sheet_elevation_deg_bounds": [1.0, 3.5]
+    },
+    "dsn_34m_bwg_xband_link": {
+      "citation": "NASA Jet Propulsion Laboratory (2022), DSN Telecommunications Link Design Handbook (810-005, Rev. E, Module 104: 34-m BWG Stations).",
+      "url": "https://deepspace.jpl.nasa.gov/dsndocs/810-005/",
+      "frequency_ghz": 8.42,
+      "earth_moon_mean_range_km": 384400.0,
+      "expected_fspl_db": 222.65,
+      "tolerance_db": 0.1
+    }
+  }
+}

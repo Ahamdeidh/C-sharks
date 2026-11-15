@@ -1,0 +1,19 @@
+{
+  "site": "Malapert A",
+  "site_id": "malapert_a",
+  "coordinates": {
+    "lat_deg": -80.13,
+    "lon_deg": 1.44,
+    "elevation_km": 0.0,
+    "source_elevation_basis": "Horizons GEODETIC SITE_COORD altitude=0 km in original request; not a measured local terrain elevation"
+  },
+  "time_window": {
+    "start_utc": "2025-01-01 00:00",
+    "stop_utc_exclusive": "2029-01-01 00:00",
+    "last_sample_utc": "2028-12-31 23:00",
+    "step_hours": 1
+  },
+  "apparent_model": "airless",
+  "ephemeris": "DE441",
+  "source": "User-provided raw JPL Horizons API responses, preserved with source headers; data-based EOP through 2026-11-13, predicted EOP through 2027-02-08 as recorded in response header; post-prediction results require additional caution."
+}

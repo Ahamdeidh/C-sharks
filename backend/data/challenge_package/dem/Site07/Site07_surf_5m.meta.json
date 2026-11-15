@@ -1,0 +1,33 @@
+{
+  "product_id": "NASA_LOLA_Site07_SURF_5M",
+  "resolution_m_per_px": 5.0,
+  "pole_row": -2400.0,
+  "pole_col": -4400.0,
+  "elevation_units": "meters",
+  "vertical_datum": "MOON_ME / 1737.4 km IAU lunar reference sphere",
+  "projection": "polar_stereographic_south_lon0",
+  "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+  "is_synthetic": false,
+  "measurement_status": "measured",
+  "uncertainty_status": "not_provided",
+  "tile_origin_x_m": 22000.0,
+  "tile_origin_y_m": -12000.0,
+  "tile_y_sign": -1.0,
+  "tile_bounds_m": [
+    22000.0,
+    -28000.0,
+    38000.0,
+    -12000.0
+  ],
+  "max_search_radius_m": 1000.0,
+  "source_asset": "Site07_surf_5m.tif",
+  "challenge_site_id": "shackleton",
+  "challenge_site_name": "Peak near Shackleton",
+  "coverage_note": "Local 5 m LOLA tile; selected only when requested coordinates are inside the verified tile footprint.",
+  "metadata_correction": {
+    "field": "tile_origin_y_m",
+    "original_user_archive_value": 12000.0,
+    "corrected_value_from_GeoTIFF_affine_transform_f": -12000.0,
+    "reason": "Supplied sidecar origin conflicts with raster affine; corrected for pixel indexing only. Not independent geographic validation."
+  }
+}
